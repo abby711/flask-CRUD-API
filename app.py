@@ -6,7 +6,7 @@ from werkzeug.security import generate_password_hash,check_password_hash
 
 app=Flask(__name__)
 app.secret_key="secretkey"
-app.config['MONGO_URI'] = 'mongodb+srv://abby:abby@freecluster.lvlvs.mongodb.net/crudapi?retryWrites=true&w=majority'
+app.config['MONGO_URI'] = 'mongodb+srv://abby:<!!!!!!!>@freecluster.lvlvs.mongodb.net/crudapi?retryWrites=true&w=majority'
 mongo = PyMongo(app)
 
 
@@ -84,5 +84,4 @@ def notfound(error=None):
 
 
 
-'''if __name__=="__main__":
-    app.run(debug=True) '''
+
